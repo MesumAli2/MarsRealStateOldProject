@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/overviewFragment2">
+
+    <fragment
+        android:id="@+id/overviewFragment2"
+        android:name="com.example.marsrealstate.overview.OverviewFragment"
+        android:label="Explore" >
+        <action
+            android:id="@+id/action_overviewFragment2_to_blankFragment"
+            app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_overviewFragment2_to_orderhistory"
+            app:destination="@id/orderhistory" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.marsrealstate.BlankFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_blank" >
+        <argument
+            android:name="itemPrice"
+            app:argType="string" />
+        <argument
+            android:name="itemImage"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_blankFragment_to_blankFragment2"
+            app:destination="@id/blankFragment2" />
+        <argument
+            android:name="itemtype"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.marsrealstate.BlankFragment2"
+        android:label="Order"
+        tools:layout="@layout/fragment_blank2" >
+        <action
+            android:id="@+id/action_blankFragment2_to_orderhistory"
+            app:destination="@id/orderhistory" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderhistory"
+        android:name="com.example.marsrealstate.Orderhistory"
+        android:label="Orders"
+        tools:layout="@layout/fragment_orderhistory" />
+
+</navigation>

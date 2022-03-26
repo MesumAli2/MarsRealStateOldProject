@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="invisible">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/idlable"
+            style="@style/Widget.Cupcake.TextView.OrderSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property ID"
+            android:layout_marginStart="4dp"
+            android:textAllCaps="true"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/id"
+            style="@style/Widget.Cupcake.TextView.OrderSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            tools:text="6 cupcakes" />
+
+        <View
+            android:id="@+id/divider1"
+            style="@style/Widget.Cupcake.Divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/typelable"
+            style="@style/Widget.Cupcake.TextView.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Type" />
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/Widget.Cupcake.TextView.OrderSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            tools:text="Chocolate" />
+
+        <View
+            android:id="@+id/divider2"
+            style="@style/Widget.Cupcake.Divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/LocationLable"
+            style="@style/Widget.Cupcake.TextView.Label"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_height="wrap_content"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/Widget.Cupcake.TextView.OrderSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Mars"
+            android:layout_marginStart="4dp"
+            tools:text="Mars" />
+
+        <View
+            android:id="@+id/divider3"
+            style="@style/Widget.Cupcake.Divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="119dp"
+            android:layout_height="55dp"
+            android:text="Order History" />
+
+        <TextView
+            android:id="@+id/totalprice"
+            style="@style/Widget.Cupcake.TextView.FinalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            tools:text="Total $5.00" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backtoList"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="118dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="-30dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_format_list_numbered_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</layout>
